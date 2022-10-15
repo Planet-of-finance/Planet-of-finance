@@ -51,7 +51,7 @@ export default function HomeScreen({ navigation }) {
                           className="w-5 h-5"
                           source={require("../../../assets/germany.png")}
                         />
-                        <Text className="text-lg ">{el.title}</Text>
+                        <Text className="text-lg ">{title}</Text>
                       </View>
    );
   return (
