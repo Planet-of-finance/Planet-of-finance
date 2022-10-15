@@ -45,15 +45,15 @@ export default function HomeScreen({ navigation }) {
       title: "First Item",
     },
   ];
-   const Item = ({ title }) => (
+  const Item = ({ title }) => (
     <View className="flex flex-row  w-2/5 p-2   justify-center items-center">
-                        <Image
-                          className="w-5 h-5"
-                          source={require("../../../assets/germany.png")}
-                        />
-                        <Text className="text-lg ">{title}</Text>
-                      </View>
-   );
+      <Image
+        className="w-5 h-5"
+        source={require("../../../assets/germany.png")}
+      />
+      <Text className="text-lg ">{title}</Text>
+    </View>
+  );
   return (
     <SafeAreaView className="bg-white h-screen flex-1">
       {/* //header */}
@@ -149,29 +149,36 @@ export default function HomeScreen({ navigation }) {
                   >
                     {DATA.map((el) => (
                       <Item title={el.title} />
-                      
                     ))}
                   </ScrollView>
                   <Text className="text-left font-extrabol text-blue-900">
                     Asset under management
                   </Text>
                 </View>
-                <View className="flex flex-row ">
-                  <View className="p-10 pr-20">
-                    <Text>USD 100 Millio</Text>
-                    <Text>USD 100 Millio</Text>
-                    <Text>USD 100 Millio</Text>
-                  </View>
-                  <View className="p-10  pl-20">
-                    <Text>USD 100 Millio</Text>
-                    <Text>USD 100 Millio</Text>
-                    <Text>USD 100 Millio</Text>
-                  </View>
+                <View className="flex flex-row flex-wrap justify-center items-center space-x-2">
+                  <Text className="bg-slate-200 rounded-xl text-3xl p-4 px-16 m-2">
+                    USD 100 Millio
+                  </Text>
+                  <Text className="bg-slate-200 rounded-xl text-3xl p-4 m-2">
+                    USD 100 to 500 Millio
+                  </Text>
+                  <Text className="bg-slate-200 rounded-xl text-3xl p-4  px-16 m-2">
+                    USD 500 to 2 Billion
+                  </Text>
+                  <Text className="bg-slate-200 rounded-xl text-3xl  px-16 p-4 m-2">
+                    USD 1 to 5 Billion
+                  </Text>
+                  <Text className="bg-slate-200 rounded-xl text-3xl p-4 m-2">
+                    USD 5 to 10 Billion
+                  </Text>
+                  <Text className="bg-slate-200 rounded-xl text-3xl p-4 m-2">
+                    More than 10 Billion
+                  </Text>
                 </View>
               </View>
               <View className="p-4">
                 <Button
-                  className="bg-slate-900"
+                  className="bg-[#051f4d]"
                   title="Search"
                   onPress={() => setChercheView(false)}
                 />
