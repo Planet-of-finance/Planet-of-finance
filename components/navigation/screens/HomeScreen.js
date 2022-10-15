@@ -162,16 +162,16 @@ export default function HomeScreen({ navigation }) {
                   <Text className="bg-slate-200 rounded-xl text-3xl p-4 m-2">
                     USD 100 to 500 Millio
                   </Text>
-                  <Text className="bg-slate-200 rounded-xl text-3xl p-4  px-16 m-2">
+                  <Text className="bg-slate-200 rounded-xl text-3xl p-4  px-8 m-2">
                     USD 500 to 2 Billion
                   </Text>
-                  <Text className="bg-slate-200 rounded-xl text-3xl  px-16 p-4 m-2">
+                  <Text className="bg-slate-200 rounded-xl text-3xl  p-4  px-12 m-2">
                     USD 1 to 5 Billion
                   </Text>
-                  <Text className="bg-slate-200 rounded-xl text-3xl p-4 m-2">
+                  <Text className="bg-slate-200 rounded-xl text-3xl p-4 px-10 m-2">
                     USD 5 to 10 Billion
                   </Text>
-                  <Text className="bg-slate-200 rounded-xl text-3xl p-4 m-2">
+                  <Text className="bg-slate-200 rounded-xl text-3xl p-4 px-8 m-2">
                     More than 10 Billion
                   </Text>
                 </View>
