@@ -1,2 +1,2 @@
 # Planet-of-finance
-change webSite to react native expo application 
+Change website to a react native Application
